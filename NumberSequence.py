@@ -3,4 +3,4 @@ class NumberSequence:
         if cadena == "":
             return [0, None]
         else:
-            return [len(cadena.split(","))]
+            return [len(cadena.split(",")), 1]
