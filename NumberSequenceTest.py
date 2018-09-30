@@ -25,6 +25,10 @@ class NumberSequenceTest(TestCase):
         ans = NumberSequence().elementMaxMin("")
         self.assertEqual(ans[1], None, "Cadena Vacia")
 
-    def test_elementMaxMinI1UnNumero(self):
+    def test_elementMaxMinI2UnNumero(self):
         ans = NumberSequence().elementMaxMin("1")
         self.assertEqual(ans[1], 1, "1 numero")
+
+    def test_elementMaxMinI2DosNumero(self):
+        ans = NumberSequence().elementMaxMin("0,1")
+        self.assertEqual(ans[1], 0, "2 numero")
