@@ -3,15 +3,25 @@ from NumberSequence import NumberSequence
 
 
 class NumberSequenceTest(TestCase):
+    # Iteracion 1
     def test_elementMaxMinI1(self):
-        self.assertEqual(NumberSequence().elementMaxMin(""),[0], "Cadena Vacia")
+        ans = NumberSequence().elementMaxMin("")
+        self.assertEqual(ans[0], 0, "Cadena Vacia")
 
     def test_elementMaxMinI1UnNumero(self):
-        self.assertEqual(NumberSequence().elementMaxMin("1"), [1], "1 numero")
+        ans = NumberSequence().elementMaxMin("1")
+        self.assertEqual(ans[0], 1, "1 numero")
 
     def test_elementMaxMinI1DosNumero(self):
-        self.assertEqual(NumberSequence().elementMaxMin("1,2"), [2], "2 numero")
+        ans = NumberSequence().elementMaxMin("1,2")
+        self.assertEqual(ans[0], 2, "2 numero")
 
     def test_elementMaxMinI1NNumero(self):
-        self.assertEqual(NumberSequence().elementMaxMin("1,3,6,5,8,4,2,7,0"), [9], "N numeros")
+        ans = NumberSequence().elementMaxMin("1,2,3,4,5,6,7,8,9")
+        self.assertEqual(ans[0], 9, "N numeros")
+
+    # Iteracion 2
+    def test_elementMaxMinI2(self):
+        ans = NumberSequence().elementMaxMin("")
+        self.assertEqual(ans[1], None, "Cadena Vacia")
 
