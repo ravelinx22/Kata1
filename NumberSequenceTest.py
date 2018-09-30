@@ -45,3 +45,7 @@ class NumberSequenceTest(TestCase):
     def test_elementMaxMinI3UnNumero(self):
         ans = NumberSequence().elementMaxMin("1")
         self.assertEqual(ans[2], 1, "1 numero")
+
+    def test_elementMaxMinI3DosNumero(self):
+        ans = NumberSequence().elementMaxMin("1,2")
+        self.assertEqual(ans[2], 2, "2 numero")
