@@ -11,3 +11,7 @@ class NumberSequenceTest(TestCase):
 
     def test_elementMaxMinI1DosNumero(self):
         self.assertEqual(NumberSequence().elementMaxMin("1,2"), [2], "2 numero")
+
+    def test_elementMaxMinI1NNumero(self):
+        self.assertEqual(NumberSequence().elementMaxMin("1, 3, 6, 5, 8, 4, 2, 7, 0"), [9], "N numeros")
+
