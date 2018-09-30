@@ -1,8 +1,7 @@
-from unittest import TestCase
+import unittest
 from NumberSequence import NumberSequence
 
-
-class NumberSequenceTest(TestCase):
+class NumberSequenceTest(unittest.TestCase):
     # Iteracion 1
     def test_elementMaxMinI1(self):
         ans = NumberSequence().elementMaxMin("")
@@ -49,3 +48,6 @@ class NumberSequenceTest(TestCase):
     def test_elementMaxMinI3DosNumero(self):
         ans = NumberSequence().elementMaxMin("1,2")
         self.assertEqual(ans[2], 2, "2 numero")
+
+if __name__ == '__main__':
+    unittest.main()

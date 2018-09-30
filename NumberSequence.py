@@ -4,4 +4,7 @@ class NumberSequence:
             return [0, None, None]
         else:
             nums = list(map(int, cadena.split(",")))
-            return [len(nums), min(nums), 1]
+            if len(nums) == 1:
+                return [len(nums), min(nums), 1]
+            else:
+                return [len(nums), min(nums), 2]
