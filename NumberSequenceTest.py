@@ -58,5 +58,9 @@ class NumberSequenceTest(unittest.TestCase):
         ans = NumberSequence().elementMaxMin("")
         self.assertEqual(ans[3], None, "Cadena Vacia")
 
+    def test_elementMaxMinI4UnNumero(self):
+        ans = NumberSequence().elementMaxMin("1")
+        self.assertEqual(ans[3], 1, "1 numero")
+
 if __name__ == '__main__':
     unittest.main()
