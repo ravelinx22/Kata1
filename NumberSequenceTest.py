@@ -64,7 +64,7 @@ class NumberSequenceTest(unittest.TestCase):
 
     def test_elementMaxMinI4DosNumero(self):
         ans = NumberSequence().elementMaxMin("2,3")
-        self.assertEqual(ans[3], 2, "2 numero")
+        self.assertEqual(ans[3], 2.5, "2 numero")
 
 if __name__ == '__main__':
     unittest.main()
